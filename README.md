@@ -48,14 +48,12 @@ download_video(
 ```
 youtube-video-downloader/
 ├── downloader/
-│   ├── __pycache__/                  # Compiled Python cache files
 │   ├── video_downloader.py           # Handles video download logic using yt-dlp
 │   ├── audio_downloader.py           # Handles audio (MP3) download logic
 │   └── playlist_downloader.py        # Manages playlist downloads (videos or audios)
 ├── ui/
-│   ├── __pycache__/                  # Compiled Python cache files
 │   ├── gui_tkinter.py                # Main CustomTkinter GUI interface
-│   └── texts.py                      # Multi-language (EN/TR) UI text strings
+│   └── texts.py                      # Multi-language UI text strings
 ├── utils/
 │   ├── helpers.py                    # Utility functions (timestamp, folder check)
 │   └── logger.py                     # Logging configuration and helper methods
