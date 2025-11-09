@@ -21,13 +21,14 @@ Install required packages:
 $ pip3 install -r requirements.txt
 ```
 
-Run the app with this command:
+Run the app:
 ``` bash
 $ python3 main.py
 ```
 
 ## Example Usage
 
+You can also use the core `download_video()` function directly in your Python code:
 ```python
 from downloader.video_downloader import download_video
 
@@ -46,21 +47,22 @@ download_video(
 
 ```
 youtube-video-downloader/
-├─ downloader/
-│  ├─ __pycache__.py
-│  ├─ video_downloader.py
-│  ├─ audio_downloader.py
-│  └─ playlist_downloader.py
-├─ ui/
-│  ├─ __pycache__.py
-│  ├─ gui_tkinter.py
-│  └─ texts.py
-├─ utils/
-│  ├─ helpers.py
-│  └─ logger.py
-├─ main.py
-├─ README.md
-└─ requirements.txt
+├── downloader/
+│   ├── __pycache__/                  # Compiled Python cache files
+│   ├── video_downloader.py           # Handles video download logic using yt-dlp
+│   ├── audio_downloader.py           # Handles audio (MP3) download logic
+│   └── playlist_downloader.py        # Manages playlist downloads (videos or audios)
+├── ui/
+│   ├── __pycache__/                  # Compiled Python cache files
+│   ├── gui_tkinter.py                # Main CustomTkinter GUI interface
+│   └── texts.py                      # Multi-language (EN/TR) UI text strings
+├── utils/
+│   ├── helpers.py                    # Utility functions (timestamp, folder check)
+│   └── logger.py                     # Logging configuration and helper methods
+├── main.py                           # Application entry point that runs the GUI
+├── README.md                         # Project documentation and setup guide
+├── requirements.txt                  # Python dependencies list
+└── LICENSE                           # MIT License for open-source usage
 ```
 
 ## License
