@@ -44,6 +44,7 @@ download_video(
 
 ## Project Structure
 
+```
 youtube-video-downloader/
 ├─ downloader/
 │  ├─ __pycache__.py
@@ -60,6 +61,7 @@ youtube-video-downloader/
 ├─ main.py
 ├─ README.md
 └─ requirements.txt
+```
 
 ## License
 
